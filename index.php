@@ -20,9 +20,6 @@
 <!-- Wide card with share menu button -->
 <div class="demo-card-wide mdl-card mdl-shadow--2dp">
   <div class="mdl-card__title">
-    <h2 class="mdl-card__title-text">Resource Tracker</h2>
-  </div>
-  <div class="mdl-card__supporting-text">
    <?php
 	$actions = [	'road' => 'Road',
 					'settlement' => 'Settlement',
@@ -32,11 +29,15 @@
 	foreach ($actions as $action => $name) :
 ?>
 <!-- Primary-colored flat button -->
-<button class="col-xs-4 mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent action <?=$action?>" data-action="<?=$action?>">
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent action <?=$action?>" data-action="<?=$action?>">
 <?=$name?>
 </button>
 
 <?php	endforeach;	?>
+    <!-- <h2 class="mdl-card__title-text">Resource Tracker</h2> -->
+  </div>
+  <div class="mdl-card__supporting-text">
+
   </div>
   <!-- <div class="mdl-card__actions mdl-card--border">
     <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
