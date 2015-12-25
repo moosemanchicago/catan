@@ -15,32 +15,60 @@
 <div class="container-fluid">
 
 <header>
-<div class="available-actions">
-<?php
+<!-- <div class="well well-lg available-actions">
+<span>Beta</span>
+</div> available-actions -->
+
+</header>
+
+<main>
+
+<div class="col-sm-12 resource-group">
+<!-- Wide card with share menu button -->
+<style>
+.demo-card-wide.mdl-card {
+	width: 100%;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url('img/catan.jpg') center / cover;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+</style>
+
+<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Resource Tracker</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+   <?php
 	$actions = [	'road' => 'Road',
 					'settlement' => 'Settlement',
 					'city' => 'City',
-					'developmentCard' => 'Development Card'
+					'developmentCard' => 'Development'
 				];
 	foreach ($actions as $action => $name) :
 ?>
 <!-- Primary-colored flat button -->
 <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent action <?=$action?>" data-action="<?=$action?>">
+
 <?=$name?>
 </button>
 
 <?php	endforeach;	?>
-</div><!-- available-actions -->
+  </div>
+  <!-- <div class="mdl-card__actions mdl-card--border">
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+      Get Started
+    </a>
+  </div> -->
+  <div class="mdl-card__menu">
 
-<div class="stats">
-
-</div>
-</header>
-
-<main>
-
-<div class="resource-group">
-<?php
+  </div>
+  <?php
 	$resources = ['brick','wood','stone','wheat','sheep'];
 	foreach ($resources as $resource) :
 ?>
@@ -63,7 +91,19 @@
   </li>
 </ul>
  <?php	endforeach;	?>
+
+ <div class="list-group">
+  <a href="#" class="list-group-item list-group-item-success">Victory Points:</a>
+  <a href="#" class="list-group-item list-group-item-info">Army Size:</a>
+  <a href="#" class="list-group-item list-group-item-warning">Longest Road:</a>
+  <a href="#" class="list-group-item list-group-item-danger">Largest Army:</a>
 </div>
+
+
+</div>
+
+
+
 </main>
 
 

@@ -48,7 +48,7 @@
 		}
 	};
 
-	function updateActions () {
+	function updateActions() {
 		// Roads
 		if (	Player.brick >= ActionCosts.road.brick &&
 			Player.wood >= ActionCosts.road.wood ) {
@@ -101,7 +101,7 @@
 		}
 		console.info("Added 1 " + resource);
 		$(this).parent().siblings('.resource-count').text( Player[ resource ]);
-		updateActions ();
+		updateActions();
 	});
 
 	$('.remove-resource').click(function(){
@@ -113,7 +113,7 @@
 		}
 		console.info("Removed 1 " + resource);
 		$(this).parent().siblings('.resource-count').text( Player[ resource ]);
-		updateActions ();
+		updateActions();
 	});
 
 	$('button.action').click(function(){
