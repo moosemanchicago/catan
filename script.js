@@ -46,6 +46,28 @@
 			}
 
 			updateActions();
+		},
+		incrementPoints : function( action ) {
+			if ("road" == action) {
+				this.roads += 1;
+				console.info("Road Built.");
+			}
+			if ("settlement" == action) {
+				this.settlements += 1;
+				this.victoryPoints += 1;
+				$('.victory-points').text(this.victoryPoints);
+			}
+			if ("city" == action) {
+				this.cities += 1;
+				this.settlements -= 1;
+				this.victoryPoints += 1;
+				$('.victory-points').text(this.victoryPoints);
+				// $('.cities').text(this.cities);
+			}
+			if ("developmentCard" == action) {
+				// this.developmentCards += 1;
+				// $('.development-cards').text(this.developmentCards);
+			}
 		}
 	};
 
@@ -140,6 +162,7 @@
 	$('button.action').click(function(){
 		var action = $(this).data('action');
 		Moose.removeResources(action);
+		Moose.incrementPoints(action);
 	});
 
 } )(); //end iife

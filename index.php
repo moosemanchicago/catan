@@ -72,7 +72,7 @@
  <?php	endforeach;	?>
 
  <div class="list-group">
-  <a href="#" class="list-group-item list-group-item-success">Victory Points: 0</a>
+  <a href="#" class="list-group-item list-group-item-success">Victory Points: <span class="victory-points">0</span></a>
   <a href="#" class="list-group-item list-group-item-info">Army Size: 0</a>
   <a href="#" class="list-group-item list-group-item-warning">Longest Road: No</a>
   <a href="#" class="list-group-item list-group-item-danger">Largest Army: No</a>
@@ -97,18 +97,19 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Welcome!</h4>
+        <h4 class="modal-title">The Island of Catan.</h4>
       </div>
       <div class="modal-body">
         <p>Did you know that you can save this to your phone and use it offline whenever you want?</p>
         <p>
-        <span>Choose a team:</span>
+        <span>Your Team:</span>
+        </p>
+        <p>
       <!-- Raised button with ripple -->
-	<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">White</button>
-	<!-- Raised disabled button-->
-	<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" disabled>Blue</button>
-	<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" disabled>Red</button>
-	<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" disabled>Orange</button>
+	<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect team white">White</button>
+	<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect team blue">Blue</button>
+	<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect team red">Red</button>
+	<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect team orange">Orange</button>
         </p>
         <!-- Simple Textfield -->
 	  <form action="#">
@@ -119,7 +120,7 @@
 	  </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Play!</button>
       </div>
     </div>
 

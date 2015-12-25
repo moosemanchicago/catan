@@ -1,8 +1,11 @@
-header {
-	padding-top: 1em;
+.container-fluid {
+	padding:0;
+
 }
 
-.available-actions {
+.resource-group {
+	padding: 0;
+	margin: 0;
 }
 
 .resource-group .action {
@@ -41,6 +44,10 @@ header {
 	background-color: white;
 }
 
+.mdl-button--fab {
+	border-radius: 0;
+}
+
 .mdl-card__supporting-text {
 	padding:0;
 }
@@ -57,16 +64,16 @@ header {
   color: #fff;
 }
 
-.resource-group {
-	margin-top: 1em;
-}
-
 .list-group-item.resource {
 	height: 6em;
 }
 
 .badge {
 	background-color: transparent;
+}
+
+.badge.badge.resource-count {
+	min-width: 2em;
 }
 
 .brick {
