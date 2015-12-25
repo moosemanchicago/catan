@@ -45,6 +45,11 @@
     </a>
   </div> -->
   <div class="mdl-card__menu">
+  <div class="list-group">
+  <a class="list-group-item list-group-item-success">Victory Points: <span class="victory-points">0</span></a>
+  <a class="list-group-item list-group-item-danger">Largest Army: <span class="largest-army">No</span></a>
+  <a class="list-group-item list-group-item-danger">Longest Road: <span class="longest-road">No</span></a>
+  </div>
 
   </div>
   <?php
@@ -72,13 +77,10 @@
  <?php	endforeach;	?>
 
  <div class="list-group">
-  <a class="list-group-item list-group-item-success">Victory Points: <span class="victory-points">0</span></a>
-  <a class="list-group-item list-group-item-info">Roads: <span class="roads-built">0</span></a>
-  <a class="list-group-item list-group-item-info">Settlements: <span class="settlements-builts">0</span></a>
-  <a class="list-group-item list-group-item-info">Cities: <span class="cities-built">0</span></a>
-  <a class="list-group-item list-group-item-info">Army Size: <span class="army-size">0</span></a>
-  <a class="list-group-item list-group-item-danger">Largest Army: <span class="largest-army">No</span></a>
-  <a class="list-group-item list-group-item-warning">Longest Road: <span class="longest-road">No</span></a>
+  <a class="list-group-item list-group-item-info stats">Roads: <span class="roads-built">0</span></a>
+  <a class="list-group-item list-group-item-info stats">Settlements: <span class="settlements-builts">0</span></a>
+  <a class="list-group-item list-group-item-info stats">Cities: <span class="cities-built">0</span></a>
+  <a class="list-group-item list-group-item-info stats">Army Size: <span class="army-size">0</span></a>
 </div>
 
 
