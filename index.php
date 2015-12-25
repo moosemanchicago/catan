@@ -83,6 +83,51 @@
 
 
 
+
+
+
+<!-- Trigger the modal with a button -->
+<button type="button" class="hide btn btn-info btn-lg modal-toggle" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Welcome!</h4>
+      </div>
+      <div class="modal-body">
+        <p>Did you know that you can save this to your phone and use it offline whenever you want?</p>
+        <p>
+        <span>Choose a team:</span>
+      <!-- Raised button with ripple -->
+	<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">White</button>
+	<!-- Raised disabled button-->
+	<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" disabled>Blue</button>
+	<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" disabled>Red</button>
+	<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" disabled>Orange</button>
+        </p>
+        <!-- Simple Textfield -->
+	  <form action="#">
+	    <div class="mdl-textfield mdl-js-textfield">
+	      <input class="mdl-textfield__input" type="text" id="sample1">
+	      <label class="mdl-textfield__label" for="sample1">Name...</label>
+	    </div>
+	  </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
 </main>
 
 

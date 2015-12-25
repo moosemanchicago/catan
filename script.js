@@ -109,6 +109,7 @@
 
 	// start application with action buttons disabled
 	$('button.action, .remove-resource').attr('disabled',true);
+	$('.modal-toggle').click();
 
 	// add a particular resource with plus button
 	$('.add-resource').click(function(){
