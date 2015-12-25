@@ -24,11 +24,11 @@
 	};
 
 	var Player = {
-		'brick' : 0,
-		'wood' : 0,
+		'brick' : 4,
+		'wood' : 4,
 		'stone' : 0,
-		'wheat' : 0,
-		'sheep' : 0,
+		'wheat' : 2,
+		'sheep' : 2,
 		'developmentCards' : [],
 		'longestRoad' : false,
 		'largestArmy' : false,
@@ -50,18 +50,21 @@
 		incrementPoints : function( action ) {
 			if ("road" == action) {
 				this.roads += 1;
+				$('.roads-built').text(this.roads);
 				console.info("Road Built.");
 			}
 			if ("settlement" == action) {
 				this.settlements += 1;
 				this.victoryPoints += 1;
 				$('.victory-points').text(this.victoryPoints);
+				$('.settlements-builts').text(this.settlements);
 			}
 			if ("city" == action) {
 				this.cities += 1;
 				this.settlements -= 1;
 				this.victoryPoints += 1;
 				$('.victory-points').text(this.victoryPoints);
+				$('.cities-built').text(this.cities);
 				// $('.cities').text(this.cities);
 			}
 			if ("developmentCard" == action) {
@@ -132,6 +135,7 @@
 	// start application with action buttons disabled
 	$('button.action, .remove-resource').attr('disabled',true);
 	$('.modal-toggle').click();
+	updateActions();
 
 	// add a particular resource with plus button
 	$('.add-resource').click(function(){

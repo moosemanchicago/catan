@@ -72,10 +72,13 @@
  <?php	endforeach;	?>
 
  <div class="list-group">
-  <a href="#" class="list-group-item list-group-item-success">Victory Points: <span class="victory-points">0</span></a>
-  <a href="#" class="list-group-item list-group-item-info">Army Size: 0</a>
-  <a href="#" class="list-group-item list-group-item-warning">Longest Road: No</a>
-  <a href="#" class="list-group-item list-group-item-danger">Largest Army: No</a>
+  <a class="list-group-item list-group-item-success">Victory Points: <span class="victory-points">0</span></a>
+  <a class="list-group-item list-group-item-info">Roads: <span class="roads-built">0</span></a>
+  <a class="list-group-item list-group-item-info">Settlements: <span class="settlements-builts">0</span></a>
+  <a class="list-group-item list-group-item-info">Cities: <span class="cities-built">0</span></a>
+  <a class="list-group-item list-group-item-info">Army Size: <span class="army-size">0</span></a>
+  <a class="list-group-item list-group-item-danger">Largest Army: <span class="largest-army">No</span></a>
+  <a class="list-group-item list-group-item-warning">Longest Road: <span class="longest-road">No</span></a>
 </div>
 
 
