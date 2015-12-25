@@ -41,6 +41,18 @@ header {
 	background-color: white;
 }
 
+.demo-card-wide.mdl-card {
+	width: 100%;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url('img/catan.jpg') center / cover;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+
 .resource-group {
 	margin-top: 1em;
 }

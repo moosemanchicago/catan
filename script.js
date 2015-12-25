@@ -91,7 +91,7 @@
 		});
 	}
 
-	$('button.action').attr('disabled',true);
+	$('button.action, .remove-resource').attr('disabled',true);
 
 	$('.add-resource').click(function(){
 		var resource = $(this).parent().parent('.resource').data('resource');
