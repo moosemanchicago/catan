@@ -1,3 +1,6 @@
+header {
+	padding-top: 1em;
+}
 .available-actions button {
 	margin: .5em;
 }

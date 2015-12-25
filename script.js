@@ -98,7 +98,6 @@
 		Player[ resource ] += 1;
 		if ( Player[ resource ] > 0 ) {
 			$(this).siblings('.remove-resource').attr('disabled',false);
-			console.log($(this) );
 		}
 		console.info("Added 1 " + resource);
 		$(this).parent().siblings('.resource-count').text( Player[ resource ]);

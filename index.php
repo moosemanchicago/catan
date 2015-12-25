@@ -14,6 +14,7 @@
 
 <div class="container-fluid">
 
+<header>
 <div class="available-actions">
 <?php
 	$actions = [	'road' => 'Road',
@@ -30,6 +31,13 @@
 
 <?php	endforeach;	?>
 </div><!-- available-actions -->
+
+<div class="stats">
+
+</div>
+</header>
+
+<main>
 
 <div class="resource-group">
 <?php
@@ -56,6 +64,9 @@
 </ul>
  <?php	endforeach;	?>
 </div>
+</main>
+
+
 </div><!-- container-fluid -->
 
 
