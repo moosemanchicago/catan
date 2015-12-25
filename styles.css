@@ -1,0 +1,59 @@
+.available-actions button {
+	margin: .5em;
+}
+
+.resource {
+	text-transform: capitalize;
+	color: white;
+}
+
+.resource-count {
+	font-size: 3em;
+}
+
+.resource-group {
+	margin-top: 1em;
+}
+
+.list-group-item {
+	height: 6em;
+}
+
+.badge {
+	background-color: transparent;
+}
+
+.brick {
+	background-color: #ef5350;
+}
+
+.wood {
+	background-color: #A1887F;
+}
+
+.stone {
+	background-color: #90A4AE;
+}
+
+.wheat {
+	background-color: #FFB74D;
+}
+
+.sheep {
+	background-color: #AED581;
+}
+
+
+.list-group {
+	margin-bottom: 0;
+}
+
+.steppers {
+	float: right;
+	margin-right: 20px;
+}
+.add-resource,
+.remove-resource {
+	margin-right: 1px;
+	margin-left: 1px;
+}
