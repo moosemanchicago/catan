@@ -41,7 +41,7 @@
 <ul class="list-group">
   <li class="list-group-item resource <?=$resource?>" data-resource="<?=$resource?>">
     <span class="badge resource-count">--</span>
-    <?=$resource?>
+    <span class="badge resource-name"><?=$resource?></span>
     <span class="steppers">
 		<!-- FAB button with ripple -->
 		<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect remove-resource">
@@ -51,8 +51,6 @@
 		<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect add-resource">
 			<i class="material-icons">+</i>
 		</button>
-		<!-- <button type="button" class="btn btn-danger remove-resource">-</button>
-		<button type="button" class="btn btn-success add-resource">+</button> -->
     </span>
   </li>
 </ul>

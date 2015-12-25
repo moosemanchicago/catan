@@ -7,8 +7,19 @@
 	color: white;
 }
 
-.resource-count {
+.list-group-item>.badge.resource-count {
 	font-size: 3em;
+	float: left;
+}
+.list-group-item>.badge.resource-name {
+	font-size: 1em;
+	float: left;
+	position: relative;
+	top: 5px;
+}
+
+.mdl-button {
+	color: white;
 }
 
 .resource-group {

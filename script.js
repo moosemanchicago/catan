@@ -97,7 +97,8 @@
 		var resource = $(this).parent().parent('.resource').data('resource');
 		Player[ resource ] += 1;
 		if ( Player[ resource ] > 0 ) {
-			$(this).attr('disabled',false);
+			$(this).siblings('.remove-resource').attr('disabled',false);
+			console.log($(this) );
 		}
 		console.info("Added 1 " + resource);
 		$(this).parent().siblings('.resource-count').text( Player[ resource ]);
@@ -107,7 +108,7 @@
 	$('.remove-resource').click(function(){
 		var resource = $(this).parent().parent('.resource').data('resource');
 		Player[ resource ] -= 1;
-		if ( Player[ resource ] < 0 ) {
+		if ( Player[ resource ] <= 0 ) {
 			Player[ resource ] = 0;
 			$(this).attr('disabled',true);
 		}
